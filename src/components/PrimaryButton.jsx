@@ -1,3 +1,3 @@
 export default function PrimaryButton() {
-  return <button className="primary__button">Send Invite</button>;
+  return <button className="primary__button">Send invite</button>;
 }

@@ -1,7 +1,7 @@
 :root {
   --headline-clr: #111827;
   --subheadline-clr: rgb(107 114 128);
-  --input-clr: hsl(217, 17%, 85%);
+  --input-clr: hsl(0, 0%, 92%);
   --accent: #4f45e4;
   --background: #fefefe;
 
@@ -11,9 +11,13 @@
 }
 
 .team__invite {
-  border: 1px solid var(--subheadline-clr);
+  border: 1px solid var(--input-clr);
   padding: 1em;
   border-radius: var(--border-radius-outer);
+}
+
+.team__invite > :first-child {
+  margin-bottom: 2em;
 }
 
 .header__section {
@@ -46,8 +50,11 @@
   font-size: 1rem;
   border-radius: var(--border-radius-inner);
   border: 1.5px solid var(--input-clr);
-  color: var(--input-clr);
   padding-left: 0.5em;
+}
+
+.signup__form::placeholder {
+  color: var(--input-clr);
 }
 
 .primary__button {
@@ -57,4 +64,69 @@
   color: var(--background);
   border: transparent;
   border-radius: var(--border-radius-inner);
+  cursor: pointer;
+  transition: 100ms ease-in;
+}
+
+.primary__button:hover,
+.secondary__button:focus {
+  opacity: 0.85;
+  transition: 100ms ease-in;
+}
+
+.secondary__button {
+  font-size: 1rem;
+  padding: 0.5em;
+  border: transparent;
+  border-radius: var(--border-radius-inner);
+  cursor: pointer;
+  transition: 10ms ease-in;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  font-weight: 500;
+}
+
+.secondary__button:hover,
+.secondary__button:focus {
+  outline: 1px solid var(--accent);
+  transition: 10ms ease-in;
+}
+
+.memberlist__header {
+  color: var(--subheadline-clr);
+  margin-block: 1em;
+}
+
+.avatar img {
+  max-width: 4ch;
+  border-radius: 1e5px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.user,
+.user__info {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  padding-block: 0.3em;
+}
+
+.member__list > * {
+  border-top: 1.5px solid var(--input-clr);
+}
+
+.member__list > :last-child {
+  border-bottom: 1.5px solid var(--input-clr);
+}
+
+.member__card h4 {
+  font-weight: 500;
+}
+
+.member__card p {
+  color: var(--subheadline-clr);
 }
