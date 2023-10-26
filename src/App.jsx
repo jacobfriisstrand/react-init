@@ -19,7 +19,7 @@ export default function App() {
           <MemberList />
         </section>
         <section className="about">
-          <p>I used props for the names and positions of the team members for easy maintainability.</p>
+          <p>I used props for the names, positions and images of the team members for easy maintainability.</p>
         </section>
       </main>
     </div>
