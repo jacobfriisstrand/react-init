@@ -6,7 +6,7 @@ export default function User(props) {
   return (
     <div className="user">
       <div className="user__info">
-        <Avatar />
+        <Avatar image={props.image} />
         <MemberCard name={props.name} position={props.position} />
       </div>
       <SecondaryButton />

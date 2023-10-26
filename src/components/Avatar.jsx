@@ -1,7 +1,7 @@
-export default function Avatar() {
+export default function Avatar(props) {
   return (
     <div className="avatar">
-      <img src="https://source.unsplash.com/random/?avatar" alt="" />
+      <img src={props.image} alt="" />
     </div>
   );
 }
