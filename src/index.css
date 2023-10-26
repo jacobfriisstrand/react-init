@@ -13,6 +13,9 @@ header h1,
 header p,
 .about p {
   text-align: center;
+}
+
+.about p {
   margin-top: 1em;
 }
 
