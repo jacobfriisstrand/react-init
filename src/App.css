@@ -25,7 +25,7 @@
 }
 
 .header__section > * {
-  margin-bottom: 0.75em;
+  margin-bottom: 1em;
 }
 
 .header__section h3 {
@@ -112,7 +112,7 @@
   place-items: center;
   justify-content: space-between;
   gap: 0.5em;
-  padding-block: 0.3em;
+  padding-block: 0.5em;
 }
 
 .member__list > * {
