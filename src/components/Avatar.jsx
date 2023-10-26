@@ -1,7 +1,7 @@
 export default function Avatar(props) {
   return (
-    <div className="avatar">
-      <img src={props.image} alt="" />
+    <div className="">
+      <img className="aspect-square object-cover max-h-12 rounded-full" src={props.image} alt="" />
     </div>
   );
 }

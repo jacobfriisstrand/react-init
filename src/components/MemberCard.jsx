@@ -1,8 +1,8 @@
 export default function MemberCard(props) {
   return (
-    <div className="member__card">
-      <h4>{props.name}</h4>
-      <p>{props.position}</p>
+    <div className="">
+      <h4 className="font-medium">{props.name}</h4>
+      <p className="text-gray-500">{props.position}</p>
     </div>
   );
 }

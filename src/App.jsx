@@ -4,20 +4,23 @@ import MemberList from "./components/MemberList";
 
 export default function App() {
   return (
-    <div className="wrapper">
-      <header>
-        <h1>My first React components</h1>
+    <div className="m-auto max-w-2xl p-5">
+      <header className="mb-10 space-y-6 text-center">
+        <h1 className="text-3xl font-bold">
+          My first React Components (with Tailwind)
+        </h1>
         <p>The assigment was to recreate a UI from the Tailwind website.</p>
-        <h2>Check out my solution below</h2>
+        <h2 className="text-2xl font-bold">Check out my solution below</h2>
       </header>
       <main>
-        <section className="team__invite">
+        <section className="mb-10 space-y-10 rounded-md border-2 p-10">
           <Header />
           <MemberList />
         </section>
-        <section className="about">
-          <p>I used props for the names, positions and images of the team members for easy maintainability.</p>
-        </section>
+        <p className="text-center">
+          I used props for the names, positions and images of the team members
+          for easy maintainability.
+        </p>
       </main>
     </div>
   );
