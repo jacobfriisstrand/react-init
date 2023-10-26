@@ -12,7 +12,7 @@
 
 .team__invite {
   border: 1px solid var(--input-clr);
-  padding: 1em;
+  padding: 1.5em;
   border-radius: var(--border-radius-outer);
 }
 
