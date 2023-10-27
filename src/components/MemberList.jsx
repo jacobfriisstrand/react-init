@@ -3,7 +3,9 @@ import User from "./User";
 export default function MemberList() {
   return (
     <div className="">
-      <p className="mb-4">Team members previosly added to projects</p>
+      <p className="mb-4 text-gray-500">
+        Team members previosly added to projects
+      </p>
       <ul className="divide-y-2 divide-gray-100 border-y-2 border-gray-100">
         <User
           name="John Doe"
