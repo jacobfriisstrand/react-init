@@ -13,7 +13,7 @@ export default function App() {
         <h2 className="text-2xl font-bold">Check out my solution below</h2>
       </header>
       <main>
-        <section className="mb-10 space-y-10 rounded-md border-2 p-10">
+        <section className="mb-10 space-y-10 rounded-md border-2 p-5">
           <Header />
           <MemberList />
         </section>
